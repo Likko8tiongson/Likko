@@ -1,0 +1,31 @@
+Superfamily,Family,species,values,ageatsex,maxlength,gregariousness,habitat,strandings,redlistPH,redlistglobal,SREA
+Dugongidae,Dugongidae,Dugong dugon,6,7,3.3,1,coastal,62,CR,VU,0.2
+Delphinoidea,Delphinidae,Feresa attenuata,7,,2.6,3,offshore,15,DD,LC,0.23
+Delphinoidea,Delphinidae,Globicephala macrorhynchus,10,10.5,6.35,52,offshore,36,DD,LC,0.33
+Delphinoidea,Delphinidae,Grampus griseus,9,9,3.8,8,offshore,69,DD,LC,0.3
+Delphinoidea,Delphinidae,Lagenodelphis hosei,15,6,2.7,92,offshore,83,VU,LC,0.5
+Delphinoidea,Delphinidae,Orcaella brevirostris,8,4.5,2.75,4,coastal,4,CR,CR,0.27
+Delphinoidea,Delphinidae,Orcinus orca,1,15,9.15,3,offshore,0,DD,DD,0.03
+Delphinoidea,Delphinidae,Peponocephala electra,9,14,2.78,143,offshore,60,DD,LC,0.27
+Delphinoidea,Delphinidae,Pseudorca crassidens,2,9.5,5.5,30,offshore,15,DD,NT,0.07
+Delphinoidea,Delphinidae,Stenella attenuata,11,10.5,2.5,84,offshore,54,DD,LC,0.37
+Delphinoidea,Delphinidae,Stenella coeruleoalba,2,5,2.56,,offshore,22,DD,LC,0.07
+Delphinoidea,Delphinidae,Stenella longirostris longirostris,19,5.5,2.06,90,offshore,145,VU,LC,0.63
+Delphinoidea,Delphinidae,Stenella longirostris roseiventris,2,,1.515,20,coastal,0,DD,LC,0.07
+Delphinoidea,Delphinidae,Steno bredanensis,8,12,2.8,2,offshore,37,DD,LC,0.27
+Delphinoidea,Delphinidae,Tursiops aduncus,7,9.5,2.7,11,coastal,25,DD,DD,0.23
+Delphinoidea,Delphinidae,Tursiops truncatus,9,7,3.8,26,coastal,32,DD,LC,0.3
+Physeteroidea,Kogiidae,Kogia breviceps,6,2.5,3.8,,offshore,55,DD,DD,0.2
+Physeteroidea,Kogiidae,Kogia sima,7,2.5,2.7,1.6,offshore,50,DD,DD,0.23
+Physeteroidea,Physeteridae,Physeter macrocephalus,9,9.5,15.85,4,offshore,43,VU,EN,0.3
+Ziphioidea,Ziphiidae,Indopacetus pacificus,1,,9,,offshore,3,DD,DD,0.03
+Ziphioidea,Ziphiidae,Mesoplodon densirostris,5,9,4.7,4,offshore,15,DD,DD,0.17
+Ziphioidea,Ziphiidae,Mesoplodon ginkgodens,0,,5.3,,offshore,1,notassessed,DD,0
+Ziphioidea,Ziphiidae,Ziphius cavirostris,1,,9.15,1.3,offshore,10,DD,LC,0.03
+Ziphioidea,Ziphiidae,Mesoplodon hotaula,1,,4.8,,offshore,1,notassessed,DD,0.03
+Balaenopteroidea,Balaenopteridae,Balaenoptera edeni,10,,15.75,1.8,offshore,11,DD,LC,0.33
+Balaenopteroidea,Balaenopteridae,Balaenoptera musculus,1,9,22,1,offshore,0,DD,EN,0.03
+Balaenopteroidea,Balaenopteridae,Balaenoptera omurai,4,,11.5,1,coastal,6,DD,DD,0.13
+Balaenopteroidea,Balaenopteridae,Megaptera novaeangliae,10,5,16.5,2,coastal,8,VU,LC,0.33
+Delphinoidea,Delphinidae,Delphinus capensis,0,13.5,2.4,,offshore,1,notassessed,,0
+Balaenopteroidea,Balaenopteridae,Balaenoptera physalus,0,7.2,25,1,offshore,1,notassessed,,0
