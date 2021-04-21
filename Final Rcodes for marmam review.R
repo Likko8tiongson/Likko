@@ -504,17 +504,17 @@ head(MyData)
 
 #And plot the observed data, fitted values and 95% CIs of the mean.
 p <- ggplot()
-p <- p + geom_point(data = lhp2, aes(y = Research.effort, x = strandings),shape = 16,size = 1.5)
 p <- p + ylab("Research effort")
 p <- p + xlab(expression(paste("Frequency of strandings")))
 p <- p + ylim(-1,30)
 p <- p + xlim(2.6,150)
+p <- p + geom_ribbon(data = MyData, aes(x = strandings, ymax = SeUp, ymin = SeLo ), fill="sky blue", alpha = 0.5)
 p <- p + theme(text = element_text(size=13)) 
 p <- p + theme(panel.background = element_blank())
 p <- p + theme(panel.border = element_rect(fill = NA, colour = "black", size = 1))
 p <- p + theme(strip.background = element_rect(fill = "white", color = "white", size = 1))
-p <- p + geom_line(data = MyData,aes(x = strandings, y = Pred), colour = "black", size = 1)
-p <- p + geom_ribbon(data = MyData, aes(x = strandings, ymax = SeUp, ymin = SeLo ), alpha = 0.5)
+p <- p + geom_point(data = lhp2, aes(y = Research.effort, x = strandings),shape = 16,size = 1.5)
+p <- p + geom_line(data = MyData,aes(x = strandings, y = Pred), size = 1, color="blue")
 p
 #GOODFIGURE!!!!!!##
 
@@ -549,17 +549,17 @@ head(MyDatagreg)
 
 #And plot the observed data, fitted values and 95% CIs of the mean.
 pgreg <- ggplot()
-pgreg <- pgreg + geom_point(data =lhp2, aes(y = Research.effort, x = gregariousness),shape = 16,size = 1.5)
 pgreg <- pgreg + ylab("Research effort")
 pgreg <- pgreg + xlab(expression(paste("Group size")))
 pgreg <- pgreg + ylim(-1,30)
 pgreg <- pgreg + xlim(0,150)
+pgreg <- pgreg + geom_ribbon(data = MyDatagreg, aes(x = gregariousness, ymax = SeUp, ymin = SeLo ), fill="light pink",alpha = 0.5)
 pgreg <- pgreg + theme(text = element_text(size=13)) 
 pgreg <- pgreg + theme(panel.background = element_blank())
 pgreg <- pgreg + theme(panel.border = element_rect(fill = NA, colour = "black", size = 1))
 pgreg <- pgreg + theme(strip.background = element_rect(fill = "white", color = "white", size = 1))
-pgreg <- pgreg + geom_line(data = MyDatagreg,aes(x = gregariousness, y = Pred), colour = "black", size = 1)
-pgreg <- pgreg + geom_ribbon(data = MyDatagreg, aes(x = gregariousness, ymax = SeUp, ymin = SeLo ), alpha = 0.5)
+pgreg <- pgreg + geom_line(data = MyDatagreg,aes(x = gregariousness, y = Pred), colour = "maroon", size = 1)
+pgreg <- pgreg + geom_point(data =lhp2, aes(y = Research.effort, x = gregariousness),shape = 16,size = 1.5)
 pgreg
 
 ##############################
@@ -590,17 +590,17 @@ head(MyDataage)
 
 #And plot the observed data, fitted values and 95% CIs of the mean.
 page <- ggplot()
-page <- page + geom_point(data = lhp2, aes(y = Research.effort, x = ageatsex),shape = 16,size = 1.5)
 page <- page + ylab("Research effort")
 page <- page + xlab(expression(paste("Age at sexual maturity")))
 page <- page + ylim(-1,30)
 page <- page + xlim(1,15)
 page <- page + theme(text = element_text(size=13)) 
 page <- page + theme(panel.background = element_blank())
+page <- page + geom_ribbon(data = MyDataage, aes(x = ageatsex, ymax = SeUp, ymin = SeLo ), fill="green", alpha = 0.5)
 page <- page + theme(panel.border = element_rect(fill = NA, colour = "black", size = 1))
 page <- page + theme(strip.background = element_rect(fill = "white", color = "white", size = 1))
-page <- page + geom_line(data = MyDataage,aes(x = ageatsex, y = Pred), colour = "black", size = 1)
-page <- page + geom_ribbon(data = MyDataage, aes(x = ageatsex, ymax = SeUp, ymin = SeLo ), alpha = 0.5)
+page <- page + geom_line(data = MyDataage,aes(x = ageatsex, y = Pred), colour = "dark green", size = 1)
+page <- page + geom_point(data = lhp2, aes(y = Research.effort, x = ageatsex),shape = 16,size = 1.5)
 page
 p
 pgreg
@@ -635,7 +635,6 @@ head(MyDatal)
 
 #And plot the observed data, fitted values and 95% CIs of the mean.
 pl <- ggplot()
-pl <- pl + geom_point(data = lhp2, aes(y =Research.effort, x = maxlength),shape = 16,size = 1.5)
 pl <- pl + ylab("Research effort")
 pl <- pl + xlab(expression(paste("Maximum length")))
 pl <- pl + ylim(0,30)
@@ -644,9 +643,9 @@ pl <- pl + theme(text = element_text(size=13))
 pl <- pl + theme(panel.background = element_blank())
 pl <- pl + theme(panel.border = element_rect(fill = NA, colour = "black", size = 1))
 pl <- pl + theme(strip.background = element_rect(fill = "white", color = "white", size = 1))
+pl <- pl + geom_ribbon(data = MyDatal, aes(x = maxlength, ymax = SeUp, ymin = SeLo), alpha = 0.5)
 pl <- pl + geom_line(data = MyDatal,aes(x = maxlength, y = Pred), colour = "black", size = 1)
-pl <- pl + geom_ribbon(data = MyDatal, aes(x = maxlength, ymax = SeUp, ymin = SeLo),alpha = 0.5)
-
+pl <- pl + geom_point(data = lhp2, aes(y =Research.effort, x = maxlength),shape = 16,size = 1.5)
 pl
 
 #combine all 4 figure into one graph using ggpubr package
